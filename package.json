@@ -11,7 +11,7 @@
     "test": "npm run lint && npm run mocha",
     "dev:preview": "cross-env NODE_ENV=development webpack --color --config preview/webpack.preview.config.js --watch",
     "dev:client": "cross-env NODE_ENV=development webpack ./client/index.js client/index.bundle.js --color --config client/webpack.config.js --watch",
-    "dev:sale": "cd examples/sale && npm run dev",
+    "dev": "cd examples/sale && npm run dev",
     "dev:script": "rollup --config src/script/rollup.config.js --watch",
     "build:index": "cross-env NODE_ENV=production webpack ./client/index.js -o client/index.bundle.js --color --config client/webpack.config.js",
     "build:sockjs": "webpack ./client/sockjs.js -o client/sockjs.bundle.js --color --config client/webpack.sockjs.config.js",
